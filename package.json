@@ -8,7 +8,7 @@
     "flatpickr": "^4.6.3",
     "gmaps": "^0.4.24",
     "jquery": "^3.3.1",
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "selectric": "^1.13.0",
     "typed.js": "^2.0.6"
   },
