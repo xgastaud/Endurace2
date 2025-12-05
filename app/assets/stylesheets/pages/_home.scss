@@ -17,18 +17,39 @@
   // height: 30px;
   .datepicker {
     margin: 0;
+    margin-bottom: 0;
   }
   .selectric-wrapper {
     flex: 0 0 auto;
     margin-right: 5px;
+    width: 350px;
+    height: 70px;
+
+    .selectric {
+      height: 70px;
+      border-radius: 3px;
+
+      .label {
+        height: 70px;
+        line-height: 70px;
+        font-size: 26px;
+      }
+
+      .button {
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+      }
+    }
   }
   .drop {
     flex: 0 0 auto;
     margin-right: 5px;
+    margin-bottom: 0;
   }
   .btn-go-home {
     flex: 0 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   > input {
     height: 70px;
@@ -106,13 +127,18 @@
   font-size: 30px;
   font-weight: bold;
   width: 250px;
+  height: 70px;
   background-color: $red;
   color: white;
   border-radius: 3px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 0;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 70px;
 }
 
 .btn-go {
@@ -142,15 +168,17 @@
 .drop {
   flex: 0 0 auto;
   width: 350px;
-  height: 30px;
   background-color: white;
   color: $red;
   border-radius: 3px;
-  height: 50px;
+  height: 70px;
   border: none;
   cursor: pointer;
   font-size: 26px;
   text-align: center;
+  box-sizing: border-box;
+  padding: 0 15px;
+  line-height: 70px;
   // margin-right: 5px;
   // margin-left: 5px;
   // margin-bottom: 20px;
@@ -158,6 +186,15 @@
 
 .select_value {
   color: $red;
+  height: 70px;
+  line-height: 70px;
+}
+
+// Ensure select elements have consistent height
+select.drop {
+  height: 70px;
+  padding: 0 15px;
+  line-height: 70px;
 }
 
 .location {
