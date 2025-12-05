@@ -1,0 +1,53 @@
+# Git
+.git
+.gitignore
+
+# Logs
+log/*
+tmp/*
+*.log
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Documentation
+README.md
+*.md
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Storage
+storage/*
+public/uploads/*
+public/packs/*
+public/packs-test/*
+
+# Database
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-*
+
+# Credentials
+config/master.key
+config/credentials.yml.enc

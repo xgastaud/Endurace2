@@ -1,7 +1,7 @@
 Rails.application.configure do
   config.action_mailer.default_url_options = { host: "http://www.endurace.com" }
   # Verifies that versions and hashed value of the package contents in the project's package.json
-  config.webpacker.check_yarn_integrity = false
+  # config.webpacker.check_yarn_integrity = false # Not needed with Vite
 
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -28,11 +28,11 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  # config.assets.js_compressor = :uglifier # Not needed with Vite
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  # config.assets.compile = false # Not needed with Vite
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

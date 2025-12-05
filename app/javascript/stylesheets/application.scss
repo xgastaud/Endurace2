@@ -1,0 +1,31 @@
+// Bootstrap 5 Configuration
+// Import Bootstrap variables first so we can override them
+@import "../../assets/stylesheets/config/fonts";
+@import "../../assets/stylesheets/config/colors";
+
+// Bootstrap 5 variable overrides (using new Bootstrap 5 variable names)
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headers-font;
+$body-bg: $light-gray;
+$font-size-base: 1.125rem; // 18px
+
+// Colors - Bootstrap 5 uses different variable names
+$primary: $blue;
+$success: $green;
+$info: $yellow;
+$danger: $red;
+$warning: $orange;
+$gray-900: $gray;
+
+// Border radius
+$border-radius: 2px;
+$border-radius-sm: 2px;
+$border-radius-lg: 2px;
+
+// Import Bootstrap 5
+@import "bootstrap/scss/bootstrap";
+
+// Your custom CSS partials
+@import "../../assets/stylesheets/layouts/index";
+@import "../../assets/stylesheets/components/index";
+@import "../../assets/stylesheets/pages/index";

@@ -1,26 +1,18 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.ms = {}));
-}(this, function (exports) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.ms = {}));
+}(this, (function (exports) { 'use strict';
 
   var fp = typeof window !== "undefined" && window.flatpickr !== undefined
       ? window.flatpickr
       : {
-          l10ns: {}
+          l10ns: {},
       };
   var Malaysian = {
       weekdays: {
-          shorthand: ["Min", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
-          longhand: [
-              "Minggu",
-              "Isnin",
-              "Selasa",
-              "Rabu",
-              "Khamis",
-              "Jumaat",
-              "Sabtu",
-          ]
+          shorthand: ["Aha", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
+          longhand: ["Ahad", "Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu"],
       },
       months: {
           shorthand: [
@@ -50,12 +42,12 @@
               "Oktober",
               "November",
               "Disember",
-          ]
+          ],
       },
       firstDayOfWeek: 1,
       ordinal: function () {
           return "";
-      }
+      },
   };
   var ms = fp.l10ns;
 
@@ -64,4 +56,4 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));

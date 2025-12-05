@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  namespace :forest do
-    post '/actions/publish-all' => 'races#publish_all'
-    post '/actions/unpublish-all' => 'races#unpublish_all'
-  end
-  mount ForestLiana::Engine => '/forest'
+  # ForestLiana routes disabled for Rails 7.2 compatibility
+  # namespace :forest do
+  #   post '/actions/publish-all' => 'races#publish_all'
+  #   post '/actions/unpublish-all' => 'races#unpublish_all'
+  # end
+  # mount ForestLiana::Engine => '/forest'
 
 
   devise_for :users,

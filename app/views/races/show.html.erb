@@ -80,7 +80,7 @@
 </div>
 <div class="container-show">
   <div class="row">
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-12 col-sm-6">
       <div class="column-container">
         <div class="metrics-show">
           <h2>
@@ -118,7 +118,7 @@
           <% end %>
         </div>
       <% if current_user != nil %>
-        <!-- <div class="col-xs-12"> -->
+        <!-- <div class="col-12"> -->
           <div class="section-container">
 
             <h2 id="show-redirection">
@@ -173,7 +173,7 @@
             <% end %>
             <% if current_user != nil and current_user.voted_for? @race and @race.starts_at < Date.today %>
               <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <div class="col-12 col-sm-6 offset-sm-3">
                   <div class="show-form-reviews">
                     <%= simple_form_for [@race, @review] do |f| %>
                       <%= f.input :score, label: 'Note', collection: 1..5 %>
@@ -189,7 +189,7 @@
       <% end %>
       </div>
     </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-12 col-sm-6">
         <div class="column-container">
           <div class="map-show">
             <h2>
@@ -200,7 +200,7 @@
             </div>
           </div>
             <% if @race.running_gpx_url != nil %>
-              <!-- <div class="col-xs-12 col-sm-12"> -->
+              <!-- <div class="col-12"> -->
                 <div class="section-container">
                   <h2>
                     Topographie

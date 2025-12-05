@@ -8,7 +8,7 @@
 
     <div class="left-container">
       <div class="card-container">
-        <button class="plusdefiltre btn-default dropdown-toggle" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+        <button class="plusdefiltre btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
           Plus de filtres
           <span class="caret"></span>
         </button>
@@ -49,7 +49,7 @@
       </div>
       <hr />
    </div>
-   <div id="map" class="hidden-sm" data-markers="<%= @markers.to_json %>" data-icon-path="<%= asset_path 'flag.png' %>"></div>
+   <div id="map" class="d-none d-md-block" data-markers="<%= @markers.to_json %>" data-icon-path="<%= asset_path 'flag.png' %>"></div>
   </div>
   <div class="pages">
     <!-- rajoute condition if params de page/ -->

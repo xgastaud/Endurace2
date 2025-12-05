@@ -6,9 +6,7 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= stylesheet_pack_tag 'application' %>
     <%= favicon_link_tag %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
 
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
@@ -29,6 +27,9 @@
     <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
     <meta name="twitter:image:src" content="<%= yield :meta_image || meta_image %>">
 
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag 'application' %>
+
   </head>
   <body>
     <%= render 'shared/navbar' %>
@@ -37,8 +38,7 @@
       <%= yield %>
     </div>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
-    <%= javascript_pack_tag "map" %> <!-- add this line -->
+    <%= vite_javascript_tag "map" %>
   </body>
 </html>

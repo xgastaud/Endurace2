@@ -1,0 +1,3 @@
+# Rails 7.2 no longer has the secrets API, using environment variables or fallback values
+ForestLiana.env_secret = ENV['FOREST_ENV_SECRET'] || '21bfa604cab9ee142d403f47d9808b3aac21c3ebe90cb290e948fa9d790eef71'
+ForestLiana.auth_secret = ENV['FOREST_AUTH_SECRET'] || 'hUHv8d-5607RI6I8LChtzA'
